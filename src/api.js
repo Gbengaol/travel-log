@@ -1,8 +1,11 @@
 import axios from 'axios';
-const API_URL = 'gbenga-travel-log.herokuapp.com/api/v1'
+const API_URL = 'https://gbenga-travel-log.herokuapp.com/api/v1'
 
 export async function listLogEntries(){
-    const res = await axios.get(`${API_URL}/logs`);
+    const res = await axios({
+        method: 'GET',
+        url: `${API_URL}/logs`
+    });
     return res;
 }
 
