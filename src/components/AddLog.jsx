@@ -24,7 +24,7 @@ const AddLogForm = ({ location, onClose }) => {
             <h5 className="addLogHeader">Kindly fill</h5>
             <div className="input-group">
                 <label>API Key</label>
-                <input type="text" className="form-style" ref={register} name="apiKey" required />
+                <input type="password" className="form-style" ref={register} name="apiKey" required />
             </div>
             <div className="input-group">
                 <label>Title</label>
